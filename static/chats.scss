@@ -1,0 +1,45 @@
+.my-container {
+
+    grid-template-columns: 200px 50px 1fr;
+    grid-template-rows: 50px 1fr;
+    display: grid;
+    grid-template-areas: "submit-chat submit-chat header"
+        "chatrooms chatrooms chat";
+    height: 100vh;
+}
+
+.new-chat {
+    grid-area: submit-chat;
+}
+
+header {
+    grid-area: header;
+}
+
+.chat-container {
+    grid-area: chatrooms;
+}
+
+.chatArea {
+    grid-area: chat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.msgArea {
+    overflow: auto;
+}
+
+.writeArea {
+    margin-top: auto;
+}
+
+.chat-block {
+    width: 100%;
+    padding: 12px;
+}
+
+.create-chat-submit {
+    height: 100%;
+}
